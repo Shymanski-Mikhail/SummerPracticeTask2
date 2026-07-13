@@ -4,12 +4,6 @@
 #include <QVector>
 #include <QPointF>
 
-struct SmokeParticle {
-    QPointF position;
-    qreal opacity;
-    qreal size;
-};
-
 class CarItem : public QGraphicsObject {
     Q_OBJECT
 public:
@@ -43,6 +37,5 @@ private:
     qreal speedX;
     qreal currentRotation;
 
-    QVector<SmokeParticle> particles;
     int smokeSpawnTimer;
 };
